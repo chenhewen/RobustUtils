@@ -1,12 +1,11 @@
 package com.robust.robustutilslib;
 
-import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
 /**
+ * RobustTool
  * Created by chenhewen on 2017/6/19.
  */
 
@@ -24,7 +23,7 @@ public class RobustTool {
         sType = type;
     }
 
-    public static void Log(Context context, String log) {
+    public static void log(Context context, String log) {
         if ((sType & SHOW_TYPE_LOG) != 0) {
             Log.i(sTag, log);
         }
