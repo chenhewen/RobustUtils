@@ -1,4 +1,4 @@
-package com.robust.robustutilslib;
+package com.robust.robustutilslib.util;
 
 import android.content.Context;
 import android.os.Handler;
@@ -6,15 +6,18 @@ import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.robust.robustutilslib.Robust;
+
 /**
- * RobustTool
+ * 有关Log的工具类
  * Created by chenhewen on 2017/6/19.
  */
 
-public class RobustTool {
+public class RobustLog {
 
     private static String sTag = "Robust";
 
+    public static final int SHOW_TYPE_NONE = 0;
     public static final int SHOW_TYPE_LOG = 1;
     public static final int SHOW_TYPE_TOAST = 1 << 1;
 
@@ -25,8 +28,8 @@ public class RobustTool {
 
     private static Handler sHandler = new Handler(Looper.getMainLooper());
 
-    public static void init(Context appContext, String tag, int type) {
-        sAppContext = appContext;
+    public static void init(String tag, int type) {
+        sAppContext = Robust.getAppContext();
         sTag = tag;
         sType = type;
         sMainThreadId = Thread.currentThread().getId();
@@ -50,6 +53,4 @@ public class RobustTool {
             }
         }
     }
-
-
 }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/content_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/robust_color_common_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_head"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dialog_icon"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/robust_common_padding"/>
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_marginStart="@dimen/robust_common_padding"
+            android:textColor="@color/robust_color_font_black_dark"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/robust_common_rate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_body"
+        android:padding="@dimen/robust_common_padding"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robust.tolly.dialog.DialogViewPager
+            android:id="@+id/dialog_body_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.robust.tolly.dialog.DialogViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_footer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/dialog_btn_cancel"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="@string/robust_common_cancel"
+            android:background="@drawable/selector_white"
+            android:textColor="@color/robust_color_font_grey"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/dialog_btn_ok"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="@string/robust_common_ok"
+            android:background="@drawable/selector_white"
+            android:textColor="@color/robust_color_font_grey"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
+

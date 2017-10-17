@@ -3,7 +3,8 @@ package com.robust.robustutils;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.robust.robustutilslib.RobustTool;
+import com.robust.robustutilslib.Robust;
+import com.robust.robustutilslib.util.RobustLog;
 
 public class MainActivity extends Activity {
 
@@ -12,7 +13,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RobustTool.init("customTag", RobustTool.SHOW_TYPE_TOAST | RobustTool.SHOW_TYPE_LOG);
-        RobustTool.log(getApplicationContext(), "hello from robust tool");
+        Robust.init(getApplicationContext());
+        RobustLog.init("customTag", RobustLog.SHOW_TYPE_TOAST | RobustLog.SHOW_TYPE_LOG);
+        RobustLog.log("hello from robust tool");
     }
 }

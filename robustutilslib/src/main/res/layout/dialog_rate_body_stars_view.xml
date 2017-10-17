@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/text"
+        layout="@layout/dialog_rate_body_text"
+        />
+    <com.robust.tolly.dialog.RateStarView
+        android:id="@+id/star_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/robust_common_padding"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/selector_rate_star"
+            style="@style/robust_rate_stars_yellow"/>
+
+        <ImageView
+            android:src="@drawable/selector_rate_star"
+            style="@style/robust_rate_stars_yellow"/>
+
+        <ImageView
+            android:src="@drawable/selector_rate_star"
+            style="@style/robust_rate_stars_yellow"/>
+
+        <ImageView
+            android:src="@drawable/selector_rate_star"
+            style="@style/robust_rate_stars_yellow"/>
+
+        <ImageView
+            android:src="@drawable/selector_rate_star"
+            style="@style/robust_rate_stars_yellow"/>
+    </com.robust.tolly.dialog.RateStarView>
+</LinearLayout>
+

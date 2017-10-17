@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="robustColorPrimary">#3F51B5</color>
+    <color name="robustColorPrimaryDark">#303F9F</color>
+    <color name="robustColorAccent">#FF4081</color>
+
+    <color name="robust_color_common_white">#FAFAFA</color>
+    <color name="robust_color_common_black">#434A54</color>
+    <color name="robust_color_common_red">#ED5565</color>
+    <color name="robust_color_common_grey">#AAB2BD</color>
+    <color name="robust_color_common_pink">#EEA0Ab</color>
+
+    <color name="robust_color_font_black_dark">#434A54</color>
+    <color name="robust_color_font_black_light">#787878</color>
+    <color name="robust_color_font_grey">#B3B3B3</color>
+
+    <color name="robust_color_click_white">#F0F0F4</color>
+
+
+</resources>

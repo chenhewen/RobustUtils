@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">robustUtilsLib</string>
+    <string name="robust_app_name">robustUtilsLib</string>
+    <string name="robust_font_families_roboto_thin">sans-serif-thin</string>
+
+    <string name="robust_common_cancel">Cancel</string>
+    <string name="robust_common_ok">OK</string>
+    <string name="robust_common_rate">Rate</string>
+
+    <string name="robust_toast_data_network_caution">DATA Network Caution!</string>
+    <string name="robust_toast_net_work_disconnected">Network Not Available!</string>
+
+    <string name="robust_email_subject">Your Suggestion</string>
+    <string name="robust_email_text">Your suggestion values!</string>
+    <string name="robust_email_choose_app">Select email application.</string>
+    <string name="robust_email_no_mail_app">No Email App found!</string>
+
 </resources>
